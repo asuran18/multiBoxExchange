@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/multi-change.js"></script>
+	</head>
+	<body>
+		<div style="width: 300px;">
+			<form>
+				<div class="col-md-4">
+					<label>source:</label>
+					<select multiple id="box1" class="src-box form-control">
+						<option>s1</option>
+						<option>s2</option>
+						<option>s3</option>
+					</select>
+				</div>
+				<div class="col-md-3" style="top: 28px;">
+					<div>
+						<button type="button" id="btn1" class="btn-s2t btn btn-default"><i class="fa fa-arrow-right"></i></button>
+					</div>
+					<div style="padding-top: 15px;">
+						<button type="button" id="btn2" class="btn-t2s  btn btn-default"><i class="fa fa-arrow-left"></i></button>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<label>target:</label>
+					<select multiple id="box2" class="tar-box form-control">
+						<option>t4</option>
+						<option>t5</option>
+						<option>t6</option>
+					</select>
+				</div>
+			</form>
+		</div>
+
+		<script type="text/javascript">
+			// $('form').multiBoxExchange({
+			// 	'srcbox': '#box1',
+			// 	'tarbox': '#box2',
+			// 	's2tbtn': '#btn1',
+			// 	't2sbtn': '#btn2'
+			// });
+
+			$('form').multiBoxExchange();
+		</script>
+	</body>
+</html>
